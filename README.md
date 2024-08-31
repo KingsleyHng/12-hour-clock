@@ -1,0 +1,3 @@
+A 12-hour clock has been designed with an integrated AM/PM indicator. This clock operates with counters driven by a fast-running clock signal, allowing the time to increment every second whenever the enable signal is activated.
+
+When the reset signal is triggered, the clock is set back to 12:00 AM. The AM/PM status is represented by a binary value: 0 for AM and 1 for PM. The time is displayed in Binary-Coded Decimal (BCD) format, with two digits each for hours (01-12), minutes (00-59), and seconds (00-59). The reset function takes precedence over the enable function, ensuring that the clock can be reset even when the enable signal is inactive.
